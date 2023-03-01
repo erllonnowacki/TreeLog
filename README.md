@@ -1,4 +1,4 @@
-# ShoppingCart
+# TreeLog
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
 
@@ -24,7 +24,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Backend
 
-Execute `npm run backend` para iniciar o backend do projeto no `http://localhost:5000/`
+Execute `npm run backend` to start the backend `http://localhost:5000/`
 
 ## Further help
 
