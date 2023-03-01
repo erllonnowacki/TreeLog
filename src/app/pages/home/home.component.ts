@@ -1,31 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { Produto } from '../produto';
-import { ProdutoService } from '../produtos.service';
-import { Observable, of, Subject} from 'rxjs'
-import { catchError} from 'rxjs/operators'
+import { Component } from '@angular/core'
 
 @Component({
-  selector: 'home-page',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+    selector: 'home-page',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css'],
 })
-export class HomePageComponent implements OnInit{
+export class HomePageComponent {
+    activeIndex = 0
 
+    images = [
+        '../../../assets/images/img1.jpg',
+        '../../../assets/images/img2.jpg',
+        '../../../assets/images/img3.jpeg',
+    ]
 
-  produtos$!: Observable<Produto[]>; //$ significa observable
-  error$ = new Subject<boolean>
+    constructor() {}
 
-  constructor(private service: ProdutoService
-    ){}
-
-  ngOnInit(){
-    this.onRefresh()
-  }
-    onRefresh(){
-      this.produtos$ = this.service.list().pipe(catchError(error => {
-        this.error$.next(true)
-        console.log(error)
-        return of()
-    }))
-  }
+    ngOnInit() {
+        setInterval(() => {
+            this.activeIndex++
+            if (this.activeIndex >= this.images.length) {
+                this.activeIndex = 0
+            }
+        }, 10000)
+    }
 }

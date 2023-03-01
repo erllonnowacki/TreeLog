@@ -1,23 +1,58 @@
-
 <div>
+    <form [formGroup]="form" class="needs-validation" novalidate>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Nome do produto</mat-label>
+                <input
+                    matInput
+                    placeholder="Nome do produto"
+                    formControlName="nome"
+                />
+            </mat-form-field>
+        </div>
 
-  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Descrição</mat-label>
+                <input
+                    matInput
+                    placeholder="Descrição do produto"
+                    formControlName="descricao"
+                />
+            </mat-form-field>
+        </div>
 
-  <div>
-    <label for="name">
-      Name
-    </label>
-    <input id="name" type="text" formControlName="name">
-  </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Preço</mat-label>
+                <input
+                    matInput
+                    placeholder="Preço do produto"
+                    formControlName="preco"
+                    type="number"
+                />
+            </mat-form-field>
+        </div>
 
-  <div>
-    <label for="address">
-      Address
-    </label>
-    <input id="address" type="text" formControlName="address">
-  </div>
+        <!-- <div class="image-upload">
+            <input
+                name="imageUrl"
+                type="file"
+                accept="image/*"
+                name=""
+                id="image"
+                (change)="imageUploaded($event)"
+            />
+        </div>
 
-  <button class="button" type="submit">Purchase</button>
+        <img id="image_preview" src="" alt="Imagem" /> -->
 
-</form>
+        <button class="button" type="submit" (click)="onSubmit()">
+            Salvar
+        </button>
+        <button class="button" type="button" (click)="onCancel()">
+            Cancelar
+        </button>
+        <button class="button" type="button" (click)="onReset()">Limpar</button>
+    </form>
 </div>
