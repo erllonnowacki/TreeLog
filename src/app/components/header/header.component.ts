@@ -11,7 +11,20 @@ export class HeaderComponent implements OnInit {
         { label: 'Produtos', path: '/produtos' },
     ]
 
+    images = [
+        '../../../assets/images/img1.jpg',
+        '../../../assets/images/img2.jpg',
+        '../../../assets/images/img3.jpeg',
+    ]
+
     constructor() {}
 
-    ngOnInit(): void {}
+    ngOnInit() {
+        // setInterval(() => {
+        //     this.activeIndex++
+        //     if (this.activeIndex >= this.images.length) {
+        //         this.activeIndex = 0
+        //     }
+        // }, 10000)
+    }
 }

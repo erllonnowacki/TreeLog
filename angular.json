@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "shopping-cart": {
+        "treelog": {
             "projectType": "application",
             "schematics": {},
             "root": "",
@@ -13,7 +13,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/shopping-cart",
+                        "outputPath": "dist/treelog",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": ["zone.js"],
@@ -62,10 +62,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "shopping-cart:build:production"
+                            "browserTarget": "treelog:build:production"
                         },
                         "development": {
-                            "browserTarget": "shopping-cart:build:development"
+                            "browserTarget": "treelog:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "shopping-cart:build"
+                        "browserTarget": "treelog:build"
                     }
                 },
                 "test": {
