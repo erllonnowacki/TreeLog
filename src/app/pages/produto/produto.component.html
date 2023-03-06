@@ -1,45 +1,57 @@
-<div class="produto">
-    <button type="button" mat-fab extended (click)="novoProduto()">
-        <mat-icon>add_circle_outline</mat-icon>Criar produto
-    </button>
-    <mat-grid-list
-        cols="4"
-        rowHeight="1:1"
-        gutterSize=" 10px"
-        *ngIf="produtos$ | async as produtos; else loadingError"
-    >
-        <mat-grid-tile class="tile-produto" *ngFor="let produto of produtos">
-            <mat-card class="card">
-                <mat-card-header>
-                    <div mat-card-avatar class="example-header-image"></div>
-                    <mat-card-title>{{ produto.nome }}</mat-card-title>
-                    <mat-card-subtitle>R${{ produto.preco }}</mat-card-subtitle>
-                </mat-card-header>
-                <mat-card-content>
-                    <p>
-                        {{ produto.descricao }}
-                    </p>
-                    <p>{{ produto.id }}</p>
-                </mat-card-content>
-                <mat-card-actions>
-                    <button
-                        mat-icon-button
-                        type="button"
-                        (click)="onEdit(produto.id)"
-                    >
-                        <mat-icon>edit</mat-icon>
-                    </button>
-                    <button
-                        mat-icon-button
-                        type="button"
-                        (click)="onDelete(produto.id)"
-                    >
-                        <mat-icon>delete</mat-icon>
-                    </button>
-                </mat-card-actions>
-            </mat-card>
-        </mat-grid-tile>
-    </mat-grid-list>
+<div class="container">
+    <div class="addProduto">
+        <button type="button" mat-fab extended (click)="novoProduto()">
+            <mat-icon>add_circle_outline</mat-icon>Criar produto
+        </button>
+    </div>
+    <div class="produto">
+        <mat-grid-list
+            cols="4"
+            rowHeight="300px"
+            gutterSize=" 10px"
+            *ngIf="produtos$ | async as produtos; else loadingError"
+        >
+            <mat-grid-tile
+                class="tile-produto"
+                *ngFor="let produto of produtos"
+            >
+                <mat-card class="card">
+                    <mat-card-header class="header">
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title style="color: #4c9959">{{
+                            produto.nome
+                        }}</mat-card-title>
+                        <mat-card-subtitle
+                            >R${{ produto.preco }}</mat-card-subtitle
+                        >
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            {{ produto.descricao }}
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button
+                            mat-icon-button
+                            type="button"
+                            (click)="onEdit(produto.id)"
+                            class="editButton"
+                        >
+                            <mat-icon>edit</mat-icon>
+                        </button>
+                        <button
+                            mat-icon-button
+                            type="button"
+                            (click)="onDelete(produto.id)"
+                            class="deleteButton"
+                        >
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
 </div>
 
 <ng-template #loadingError>
@@ -49,6 +61,6 @@
     </div>
 
     <ng-template #loadingNoError>
-        <mat-spinner></mat-spinner>
+        <mat-spinner spinnerColor="#4C9959"></mat-spinner>
     </ng-template>
 </ng-template>

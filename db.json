@@ -5,6 +5,30 @@
       "nome": "Teste1123",
       "descricao": "Teste descrição",
       "preco": "10"
+    },
+    {
+      "id": 2,
+      "nome": "teste 202",
+      "descricao": "teste",
+      "preco": 22
+    },
+    {
+      "id": 3,
+      "nome": "nome",
+      "descricao": "descrição",
+      "preco": 55
+    },
+    {
+      "id": 4,
+      "nome": "nome",
+      "descricao": "teste 23",
+      "preco": 44.3
+    },
+    {
+      "id": 5,
+      "nome": "teste 32",
+      "descricao": "alo",
+      "preco": 11
     }
   ],
   "usuario": [

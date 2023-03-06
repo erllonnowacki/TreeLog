@@ -1,21 +1,33 @@
-.card-produto {
-    max-width: 400px;
-}
-
-/* .tile-produto {
-    border: 1px solid red;
-} */
-
 .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
 }
 
 .card {
-  max-width: 100%;
-  min-width: 60%;
+    width: 100%;
+    height: 100%;
+    display: grid;
 }
 
-.img-produto{
-  max-width: 25%;
+.img-produto {
+    max-width: 25%;
+}
+
+.mat-mdc-fab.mat-accent,
+.mat-mdc-mini-fab.mat-accent {
+    --mdc-fab-container-color: #4c9959;
+    --mat-mdc-fab-color: #ebb867;
+}
+
+.addProduto {
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+.editButton {
+    color: #d4d153;
+}
+
+.deleteButton {
+    color: red;
 }

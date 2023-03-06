@@ -11,11 +11,20 @@ body {
 }
 body {
     margin: 0;
-    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
-/* #4C9959
-#D4D153
-#EBB867
-#D46053
-#D160F7 */
+.cores {
+    color: #4c9959 #d4d153 #ebb867 #d46053 #d160f7;
+}
+
+mat-progress-spinner circle,
+mat-spinner circle {
+    stroke: #4c9959 !important;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
