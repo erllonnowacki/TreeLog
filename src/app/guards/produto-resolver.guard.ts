@@ -12,6 +12,7 @@ export class ProdutoResolverGuard implements Resolve<Produto> {
 
     resolve(
         route: ActivatedRouteSnapshot
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
     ): Observable<Produto> | Observable<any> {
         if (route.params && route.params['id']) {
             return this.service.getByIdProduto(route.params['id'])

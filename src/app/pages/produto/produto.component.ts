@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { catchError } from 'rxjs/operators'
 import { Component, OnInit } from '@angular/core'
 import { Subject, Observable, of } from 'rxjs'

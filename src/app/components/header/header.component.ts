@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core'
+import { Component, ViewEncapsulation } from '@angular/core'
 
 @Component({
     selector: 'app-header',
@@ -6,7 +6,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core'
     styleUrls: ['./header.component.css'],
     encapsulation: ViewEncapsulation.None,
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
     links = [
         { label: 'Home', path: '' },
         { label: 'Produtos', path: '/produtos' },
@@ -17,15 +17,4 @@ export class HeaderComponent implements OnInit {
         '../../../assets/images/img2.jpg',
         '../../../assets/images/img3.jpeg',
     ]
-
-    constructor() {}
-
-    ngOnInit() {
-        // setInterval(() => {
-        //     this.activeIndex++
-        //     if (this.activeIndex >= this.images.length) {
-        //         this.activeIndex = 0
-        //     }
-        // }, 10000)
-    }
 }
