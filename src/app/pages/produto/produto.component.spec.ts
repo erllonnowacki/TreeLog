@@ -1,22 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing'
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProdutoComponent } from './produto.component'
+import { ProdutoComponent } from './produto.component';
 
 describe('ProdutoComponent', () => {
-    let component: ProdutoComponent
-    let fixture: ComponentFixture<ProdutoComponent>
+  let component: ProdutoComponent;
+  let fixture: ComponentFixture<ProdutoComponent>;
 
-    beforeEach(async () => {
-        await TestBed.configureTestingModule({
-            declarations: [ProdutoComponent],
-        }).compileComponents()
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ProdutoComponent],
+    }).compileComponents();
 
-        fixture = TestBed.createComponent(ProdutoComponent)
-        component = fixture.componentInstance
-        fixture.detectChanges()
-    })
+    fixture = TestBed.createComponent(ProdutoComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
-    it('should create', () => {
-        expect(component).toBeTruthy()
-    })
-})
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

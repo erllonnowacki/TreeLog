@@ -1,23 +1,23 @@
 <div class="header">
-    <div class="carousel">
-        <!-- <img
+  <div class="carousel">
+    <!-- <img
             *ngFor="let image of images; let i = index"
             [src]="image"
             [ngClass]="{ active: i === activeIndex }"
         /> -->
-    </div>
-    <nav mat-tab-nav-bar [tabPanel]="tabPanel">
-        <a
-            *ngFor="let link of links"
-            #rla="routerLinkActive"
-            mat-tab-link
-            routerLinkActive
-            [routerLink]="link.path"
-            [routerLinkActiveOptions]="{ exact: true }"
-            [active]="rla.isActive"
-        >
-            {{ link.label }}
-        </a>
-    </nav>
-    <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
+  </div>
+  <nav mat-tab-nav-bar [tabPanel]="tabPanel">
+    <a
+      *ngFor="let link of links"
+      #rla="routerLinkActive"
+      mat-tab-link
+      routerLinkActive
+      [routerLink]="link.path"
+      [routerLinkActiveOptions]="{ exact: true }"
+      [active]="rla.isActive"
+    >
+      {{ link.label }}
+    </a>
+  </nav>
+  <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
 </div>

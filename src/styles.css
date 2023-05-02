@@ -1,30 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    background-color: #e7fae7;
+  height: 100%;
+  background-color: #e7fae7;
 }
 body {
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
 }
 
 .cores {
-    color: #4c9959 #d4d153 #ebb867 #d46053 #d160f7;
+  color: #4c9959 #d4d153 #ebb867 #d46053 #d160f7;
 }
 
 mat-progress-spinner circle,
 mat-spinner circle {
-    stroke: #4c9959 !important;
+  stroke: #4c9959 !important;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }

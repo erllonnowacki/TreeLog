@@ -1,33 +1,38 @@
 .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
 }
 
 .card {
-    width: 100%;
-    height: 100%;
-    display: grid;
+  width: 100%;
+  height: 100%;
+  display: grid;
 }
 
 .img-produto {
-    max-width: 25%;
+  max-width: 25%;
 }
 
 .mat-mdc-fab.mat-accent,
 .mat-mdc-mini-fab.mat-accent {
-    --mdc-fab-container-color: #4c9959;
-    --mat-mdc-fab-color: #ebb867;
+  --mdc-fab-container-color: #4c9959;
+  --mat-mdc-fab-color: #ebb867;
 }
 
 .addProduto {
-    align-self: flex-end;
-    margin-bottom: 5px;
+  align-self: flex-end;
+  margin-bottom: 5px;
 }
 
 .editButton {
-    color: #d4d153;
+  color: #d4d153;
 }
 
 .deleteButton {
-    color: red;
+  color: red;
+}
+
+.spinner {
+  display: grid;
+  place-content: center;
 }

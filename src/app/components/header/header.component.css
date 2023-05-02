@@ -1,28 +1,28 @@
 .header {
-    background-color: white;
-    margin: 10px;
-    border-radius: 8px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .carousel img {
-    flex: 1;
-    display: none;
-    max-width: 50%;
-    height: auto;
-    animation-duration: 3s;
-    animation: backwards;
-    animation-direction: normal;
+  flex: 1;
+  display: none;
+  max-width: 50%;
+  height: auto;
+  animation-duration: 3s;
+  animation: backwards;
+  animation-direction: normal;
 }
 
 .carousel img.active {
-    flex: 1;
-    display: block;
-    max-width: 50%;
-    animation-duration: 1s;
-    animation: normal;
+  flex: 1;
+  display: block;
+  max-width: 50%;
+  animation-duration: 1s;
+  animation: normal;
 }
 
 .mat-tab-link {
-    opacity: 1;
-    color: red;
+  opacity: 1;
+  color: red;
 }

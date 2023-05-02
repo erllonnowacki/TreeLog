@@ -5,29 +5,29 @@
 } */
 
 .section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .left,
 .right {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .left {
-    text-align: right;
+  text-align: right;
 }
 
 .right {
-    text-align: left;
+  text-align: left;
 }
 
 img {
-    max-width: 30%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  max-width: 30%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
